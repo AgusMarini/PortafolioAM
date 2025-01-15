@@ -1,0 +1,84 @@
+/* General styles */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #e872f3;
+    margin-bottom: 20px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cert-card,
+  .project-card {
+    perspective: 1000px; /* Perspectiva para el efecto 3D */
+    transform-style: preserve-3d; /* Mantiene el estilo 3D */
+    transition: transform 0.1s ease-out; /* Transición suave */
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #e872f3;
+    
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cert-card:hover,
+  .project-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /* Image styles */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styles */
+  .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .project-button {
+    padding: 10px 15px;
+    color: white;
+    background-color: #f04ab8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #8f1feb;
+    transform: scale(1.1); /* Enlarges slightly */
+  }
+  /* Tema claro */
+.light .project-card {
+  background-color: #f3e6f2; /* Fondo claro */
+  color: #333333;
+}
+
+.light .project-button {
+  background-color: #f179c3;
+  color: #ffffff;
+}
+
+.light .project-button:hover {
+  background-color: #8f1feb;
+  color: #161b22;
+}

@@ -1,0 +1,137 @@
+/* Sección de contacto */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  gap: 0px;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+/* Información de contacto */
+.contact-info {
+  flex: 1;
+  max-width: 1000px; /* Controlar el ancho */
+  margin-right: 20px; /* Reducir el espacio derecho */
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #e872f3;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contact-info span {
+  color: #e872f3;
+  font-weight: bold;
+}
+
+/* Formulario */
+.form-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #161b22;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  padding-right: -1000px;
+}
+section#contact .form-container {
+  flex: 1;
+  max-width: 700px;
+  margin-left: 10px;
+  background-color: #161b22;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+.form-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c9d1d9;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Campos del formulario */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #c9d1d9;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e872f3;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Botón de envío */
+.send-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f04ab8;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #8f1feb;
+  transform: scale(1.05);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-info {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .form-container {
+    
+    max-width: 400px;
+  }
+}
