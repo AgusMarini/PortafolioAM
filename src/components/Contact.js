@@ -13,8 +13,8 @@ const Contact = () => {
     };
 
     try {
-      // Enviar los datos al backend
-      const response = await fetch("http://localhost:5000/send-email", {
+      // Enviar los datos a la función de Netlify
+      const response = await fetch("/.netlify/functions/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
