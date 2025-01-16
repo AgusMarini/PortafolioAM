@@ -2,38 +2,6 @@ import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Recoger los datos del formulario
-    const formData = {
-      nombre: e.target.nombre.value,
-      correo: e.target.correo.value,
-      mensaje: e.target.mensaje.value,
-    };
-
-    try {
-      // Enviar los datos a la función de Netlify
-      const response = await fetch("/.netlify/functions/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert("Correo enviado correctamente");
-        e.target.reset(); // Limpia el formulario después de enviarlo
-      } else {
-        alert("Error enviando el correo");
-      }
-    } catch (error) {
-      console.error("Error al enviar el correo:", error);
-      alert("No se pudo conectar con el servidor");
-    }
-  };
-
   return (
     <section id="contact">
       <div className="contact-info">
@@ -53,7 +21,11 @@ const Contact = () => {
       </div>
       <div className="form-container" data-aos="fade-up">
         <h2>Envíame un mensaje</h2>
-        <form onSubmit={handleSubmit}>
+        <form
+          action="https://formsubmit.co/agustina_1312@hotmail.com" // Cambia al email que recibirás los mensajes
+          method="POST"
+        >
+          {/* Campo para nombre */}
           <div className="input-group">
             <label htmlFor="nombre">Nombre</label>
             <input
@@ -64,16 +36,20 @@ const Contact = () => {
               required
             />
           </div>
+
+          {/* Campo para correo */}
           <div className="input-group">
             <label htmlFor="correo">Correo</label>
             <input
               type="email"
               id="correo"
-              name="correo"
+              name="email" // IMPORTANTE: Este debe llamarse "email"
               placeholder="Tu correo electrónico"
               required
             />
           </div>
+
+          {/* Campo para mensaje */}
           <div className="input-group">
             <label htmlFor="mensaje">Mensaje</label>
             <textarea
@@ -83,6 +59,8 @@ const Contact = () => {
               required
             ></textarea>
           </div>
+
+          {/* Botón de envío */}
           <button type="submit" className="send-button">
             Enviar
           </button>
