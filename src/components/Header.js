@@ -9,6 +9,7 @@ import {
   faMoon,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../App.css";
 
 const Header = ({ toggleTheme, currentTheme }) => {
@@ -19,7 +20,7 @@ const Header = ({ toggleTheme, currentTheme }) => {
   };
 
   const closeMenu = () => {
-    setMenuOpen(false); // Cierra el menú al hacer clic en un enlace
+    setMenuOpen(false);
   };
 
   return (
@@ -80,18 +81,52 @@ const Header = ({ toggleTheme, currentTheme }) => {
           </ul>
         </nav>
 
-        {/* Botón de cambio de tema */}
-        <button
-          onClick={toggleTheme}
-          className="theme-toggle"
-          aria-label="Cambiar tema"
+        {/* Contenedor para íconos sociales y botón de cambio de tema */}
+        <div
+          className="header-icons"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "25px", // Espaciado entre íconos y botón de cambio de tema
+          }}
         >
-          {currentTheme === "dark" ? (
-            <FontAwesomeIcon icon={faSun} />
-          ) : (
-            <FontAwesomeIcon icon={faMoon} />
-          )}
-        </button>
+          {/* Íconos sociales */}
+          <div className="social-icons" style={{ display: "flex", gap: "15px" }}>
+            <a
+              href="https://www.linkedin.com/in/agustina-marini-finoquetto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                style={{ fontSize: "1.5rem", color: "white" }}
+              />
+            </a>
+            <a
+              href="https://github.com/AgusMarini"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ fontSize: "1.5rem", color: "white" }}
+              />
+            </a>
+          </div>
+
+          {/* Botón de cambio de tema */}
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label="Cambiar tema"
+          >
+            {currentTheme === "dark" ? (
+              <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+            )}
+          </button>
+        </div>
       </div>
     </header>
   );

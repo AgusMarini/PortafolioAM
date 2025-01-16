@@ -3,13 +3,15 @@ import React from "react";
 const About = () => {
   return (
     <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy una estudiante de la tecnicatura en programacion en la UTN. 
-        Mi experiencia incluye programación en lenguajes como Java, C, HTML, CSS, React y JavaScript.
-        Me especializo en el desarrollo front-end y busco constantemente aprender nuevas tecnologías.
-      </p>
-    </section>
+  <h2>Sobre mí</h2>
+  <p>
+  Cursando la Tecnicatura en Programación  en La Universidad Tecnológica Nacional. Experiencia en lenguajes:  Java, C, HTML, CSS, React y JavaScript. Mi principal interés se concentra  en el desarrollo front-end, buscando  constantemente aprender nuevas tecnologías.
+  </p>
+  <div style={{ display: "flex", justifyContent: "center" }}>
+    <button id="btn-cv">Ver CV</button>
+  </div>
+</section>
+
   );
 };
 

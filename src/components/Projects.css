@@ -72,6 +72,9 @@
   background-color: #f3e6f2; /* Fondo claro */
   color: #333333;
 }
+.light .project-card p{
+  color: #696565;
+}
 
 .light .project-button {
   background-color: #f179c3;
@@ -80,5 +83,5 @@
 
 .light .project-button:hover {
   background-color: #8f1feb;
-  color: #161b22;
+  color: #494848;
 }

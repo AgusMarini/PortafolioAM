@@ -135,3 +135,49 @@ section#contact .form-container {
     max-width: 400px;
   }
 }
+.light #contact {
+  background-color: #f5f5f5; /* Fondo claro */
+  color: #0d1117; /* Texto oscuro */
+}
+
+.light .contact-info h2,
+.light .form-container h2 {
+  color: #f04ab8; /* Títulos en color destacable */
+}
+
+
+.light .contact-info span {
+  color:#e872f3; /* Destacar los datos de contacto */
+}
+
+.light .form-container {
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+.light .input-group label {
+  color: #333333; /* Color gris oscuro para las etiquetas */
+}
+.light .input-group input,
+.light .input-group textarea {
+  background-color: #f9f9f9; /* Fondo claro para campos */
+  color: #0d1117; /* Texto oscuro */
+  border: 1px solid #f04ab8; /* Borde en color destacable */
+}
+
+.light .send-button {
+  background-color: #f04ab8; /* Fondo del botón en modo claro */
+  color: white;
+}
+.light .contact-info {
+  color: #666666; /* Color gris para el texto general */
+}
+
+.light .send-button:hover {
+  background-color: #f04ab8; /* Fondo del botón al pasar el mouse */
+}
+.light section#contact .form-container{
+  background-color: #f3e6f2;
+}
+.light .contact-info p {
+  color: #777272; /* Color gris oscuro */
+}
