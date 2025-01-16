@@ -64,6 +64,8 @@ const Contact = () => {
           <button type="submit" className="send-button">
             Enviar
           </button>
+          <input type="hidden" name="_next" value="https://tu-sitio.netlify.app/" />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
       </div>
     </section>
