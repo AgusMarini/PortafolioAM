@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Pagina Muzarella Catona",
-      description: "Pagina para .",
+      description: "Pagina web para finalizacion del curso de full stuck de codo a codo en grupo",
       image: catona, // Imagen personalizada
       link: "https://grupo-b17-chasmannjoel.vercel.app/", // Enlace al proyecto
       code: "#", // Enlace al código
