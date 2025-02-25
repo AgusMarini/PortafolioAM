@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: "TravelClick",
       description: "Invente y diseñe esta app en figma para mi proyecto de finalizacion del curso de Diseño UX/UI",
-      image: TravelClick, // Imagen personalizada
+      image: inicioSesionAgendaDentista, // Imagen personalizada
       link: "https://www.figma.com/proto/2TyziNkVvM0mtQRsQgxI4Z/Travelclick%2Fcorregido?node-id=194-206&starting-point-node-id=194%3A199", // Enlace al proyecto
       code: "https://www.figma.com/design/jlHcJ5VJWt3qSTZY70TtvB?fuid=1279433052732912648&prev-plan-id=1279433054884902412&prev-plan-type=team&prev-selected-view=recentsAndSharing", // Enlace al código
     },

@@ -9,7 +9,7 @@ const About = () => {
   </p>
   <div style={{ display: "flex", justifyContent: "center" }}>
     <a
-      href="/CV.pdf" // Ruta del archivo PDF en la carpeta public
+      href="/AgustinaMF.pdf" // Ruta del archivo PDF en la carpeta public
       target="_blank" // Abre el archivo en una nueva pestaña
       rel="noopener noreferrer" // Buena práctica para enlaces externos
       id="btn-cv"
