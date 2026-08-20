@@ -230,6 +230,51 @@ header {
   flex-wrap: wrap;
 }
 
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hero-photo-wrap {
+  flex: 0 0 auto;
+}
+
+.hero-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .hero-main {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero .hero-tagline {
+    max-width: none;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+}
+
 /* ============ Botones ============ */
 .btn {
   display: inline-block;

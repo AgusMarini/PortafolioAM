@@ -24,16 +24,17 @@ const About = () => {
       <div className="bento">
         <div className="bento-card bento-bio" data-aos="fade-up">
           <p>
-            <strong>Técnica en Programación graduada en la UTN</strong> (Mar
-            del Plata). Desarrollo software para clientes reales: llevé un
-            e-commerce de punta a punta hasta producción, construí una
-            plataforma de catálogo y gestión para una distribuidora y mantuve
-            aplicaciones en producción en un equipo distribuido de EE.UU.
+            Soy <strong>Técnica en Programación (UTN, Mar del Plata)</strong> y
+            trabajo como desarrolladora full stack. Me gusta llevar las cosas
+            hasta el final: no me quedo en el prototipo, sino que llevo el
+            proyecto a producción y lo sostengo funcionando — un e-commerce,
+            una plataforma de catálogo y gestión para una distribuidora,
+            aplicaciones que mantengo activas para un equipo en EE.UU.
           </p>
           <p>
             Trabajo con flujo Git completo (branches, pull requests, code
-            reviews) y uso estratégico de IA para acelerar entregas sin perder
-            control técnico del código.
+            reviews) y uso IA como parte habitual de mi proceso, sin perder el
+            control de lo que escribo.
           </p>
           <a
             className="btn btn-primary"

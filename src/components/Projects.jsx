@@ -1,14 +1,14 @@
 import React from "react";
 import "./Projects.css";
 
-import catona from "./catona.png";
-import alura from "./alura.png";
-import serviFacil from "./servifacil.png";
-import travelClick from "./travelclick.png";
+import catona from "../assets/images/catona.png";
+import alura from "../assets/images/alura.png";
+import serviFacil from "../assets/images/servifacil.png";
+import travelClick from "../assets/images/travelclick.png";
 
-import inicioSesionAgendaDentista from "./inicioSesionAgendaDentista.png";
-import bellaVista from "./bellavista.png";
-import stoneControl from "./stonecontrol.png";
+import inicioSesionAgendaDentista from "../assets/images/inicioSesionAgendaDentista.png";
+import bellaVista from "../assets/images/bellavista.png";
+import stoneControl from "../assets/images/stonecontrol.png";
 
 const Projects = () => {
   const projects = [

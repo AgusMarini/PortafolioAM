@@ -1,9 +1,9 @@
 import React from "react";
 import "./Certifications.css";
-import certificadoFullStack from "./cer.png"; // Ruta correcta para tu imagen
-import certificadoDisenio from "./dis.png";
-import certificadoPython from "./cer1.png";
-import certificadoFront from "./alura2.png"; // Una sola imagen para Front-End
+import certificadoFullStack from "../assets/images/cer.png"; // Ruta correcta para tu imagen
+import certificadoDisenio from "../assets/images/dis.png";
+import certificadoPython from "../assets/images/cer1.png";
+import certificadoFront from "../assets/images/alura2.png"; // Una sola imagen para Front-End
 
 const Certifications = () => {
   const certifications = [

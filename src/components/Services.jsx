@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Services.css";
 
-import bellaVista from "./bellavista.png";
-import stoneControl from "./stonecontrol.png";
-import serviFacil from "./servifacil.png";
-import agenda from "./inicioSesionAgendaDentista.png";
+import bellaVista from "../assets/images/bellavista.png";
+import stoneControl from "../assets/images/stonecontrol.png";
+import serviFacil from "../assets/images/servifacil.png";
+import agenda from "../assets/images/inicioSesionAgendaDentista.png";
 
 const services = [
   {

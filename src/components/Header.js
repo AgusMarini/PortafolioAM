@@ -10,6 +10,7 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import avatar from "../assets/images/avatar.png";
 import "../App.css";
 
 const Header = ({ toggleTheme, currentTheme }) => {
@@ -122,26 +123,38 @@ const Header = ({ toggleTheme, currentTheme }) => {
 
       {/* Hero */}
       <div className="hero">
-        <h1>Agustina Marini Finoquetto</h1>
-        <p className="hero-role">Desarrolladora Full Stack</p>
-        <p className="hero-tagline">
-          Llevo productos de la idea a producción: e-commerce, catálogos y
-          sistemas de gestión para clientes reales, con React, Next.js, Angular
-          y Java/Spring Boot. Graduada de la UTN, trabajo remoto.
-        </p>
-        <div className="hero-cta">
-          <a className="btn btn-primary" href="#projects">
-            Ver proyectos
-          </a>
-          <a
-            className="btn btn-secondary"
-            href={`${process.env.PUBLIC_URL}/Agustina-Marini-Finoquetto-CV.pdf`}
-            target="_blank"
-            rel="noopener noreferrer"
-            download
-          >
-            Descargar CV
-          </a>
+        <div className="hero-main">
+          <div className="hero-text">
+            <h1>Agustina Marini Finoquetto</h1>
+            <p className="hero-role">Desarrolladora Full Stack</p>
+            <p className="hero-tagline">
+              Llevo productos de la idea a producción: e-commerce, catálogos y
+              sistemas de gestión para clientes reales, con React, Next.js, Angular
+              y Java/Spring Boot. Graduada de la UTN, trabajo remoto.
+            </p>
+            <div className="hero-cta">
+              <a className="btn btn-primary" href="#projects">
+                Ver proyectos
+              </a>
+              <a
+                className="btn btn-secondary"
+                href={`${process.env.PUBLIC_URL}/Agustina-Marini-Finoquetto-CV.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Descargar CV
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-photo-wrap">
+            <img
+              src={avatar}
+              alt="Agustina Marini Finoquetto"
+              className="hero-photo"
+            />
+          </div>
         </div>
       </div>
     </header>

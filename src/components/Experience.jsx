@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Experience.css";
 
-import bellaVista from "./bellavista.png";
-import stoneControl from "./stonecontrol.png";
-import agenda from "./inicioSesionAgendaDentista.png";
+import bellaVista from "../assets/images/bellavista.png";
+import stoneControl from "../assets/images/stonecontrol.png";
+import agenda from "../assets/images/inicioSesionAgendaDentista.png";
 
 const experiences = [
   {
